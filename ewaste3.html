@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste</title>
+    <style>
+        body {
+            background-color: #55C595;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        fieldset {
+            background-color: #2a9d8f;
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        legend {
+            font-size: 1.5rem;
+            padding: 0 10px;
+            background-color: #264653;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus {
+            outline: none;
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #e76f51;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #f4a261;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend><h3>Details</h3></legend>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="Name" id="Name"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="Address" id="Address"></td>
+            </tr>
+            <tr>
+                <td>Phone No:</td>
+                <td><input type="text" name="Phone no." id="PhoneNo"></td>
+            </tr>
+            <tr>
+                <td>Product:</td>
+                <td><input type="text" name="Product" id="Product"></td>
+            </tr>
+            <tr>
+                <td>Usage:</td>
+                <td><input type="text" name="Usage" id="Usage"></td>
+            </tr>
+            <tr>
+                <td>Condition:</td>
+                <td><input type="text" name="Condition" id="Condition"></td>
+            </tr>
+            <tr>
+                <td>Pickup Date:</td>
+                <td><input type="date" name="Pickup" id="datepicker"></td>
+            </tr>
+        </table>
+        <button id="btn" class="btn">SUBMIT</button>
+    </fieldset>
+</body>
+
+</html>
